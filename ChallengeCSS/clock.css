@@ -1,0 +1,10 @@
+#clock {
+  color: rgb(231, 231, 231);
+  position: absolute; /* 또는 position: fixed; */
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%); /* 요소의 중심점을 올바르게 조정합니다. */
+  margin: 0;
+  font-size: 130px;
+  white-space: nowrap; /*quote 줄바꿈 방지용*/
+}

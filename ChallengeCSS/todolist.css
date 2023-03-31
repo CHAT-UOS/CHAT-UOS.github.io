@@ -1,0 +1,83 @@
+@keyframes listAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes listDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#ToDo {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+}
+.ToDoText {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(200, 200, 200);
+}
+.real-color {
+  color: var(--white);
+}
+ul {
+  padding: 0;
+}
+#title-List {
+  display: block;
+  margin: 0 0 30px 10%;
+  font-size: 30px;
+  text-decoration: underline;
+}
+li {
+  white-space: nowrap; /*quote 줄바꿈 방지용*/
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#newScreen {
+  position: absolute;
+  right: 30px;
+  bottom: 100px;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+}
+.line-through {
+  text-decoration: line-through;
+}
+
+#todo-list {
+  list-style-type: none;
+}
+#todo-list input {
+  margin-right: 15px;
+}
+#todo-list button {
+  margin-left: 15px;
+  border: none;
+  background-color: var(--white);
+}
+#todo-Form {
+  display: flex;
+  width: 90%;
+}
+#todo-Form label input {
+  border: none;
+}
+#todo-Form label input:active {
+  outline: none;
+}
+#todo-Form label input:focus {
+  outline: none;
+}

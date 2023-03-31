@@ -1,0 +1,65 @@
+#Login-form {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+#Login-form input {
+  background-color: transparent;
+  width: 500px;
+  height: 80px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(222, 222, 222);
+  font-size: 30px;
+  color: var(--white);
+}
+
+#Login-form input:hover {
+  border-bottom: 3px solid var(--white);
+}
+#Login-form input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--white);
+}
+#greeting {
+  color: var(--white);
+  position: absolute; /* 또는 position: fixed; */
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: 59%;
+  transform: translate(-50%, -50%); /* 요소의 중심점을 올바르게 조정합니다. */
+  margin: 0;
+  font-size: 50px;
+  white-space: nowrap; /*quote 줄바꿈 방지용*/
+}
+
+.box {
+  position: absolute;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: tomato;
+}
+.box2 {
+  position: absolute;
+  right: 15px;
+  bottom: -10px;
+  background-color: rgb(184, 241, 171);
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+}
+.box span {
+  margin-left: 5px;
+}
+.confirm {
+  margin-left: 5px;
+}

@@ -1,0 +1,66 @@
+@keyframes moveUpward {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes moveDownward {
+  0% {
+    /*quote.js 79에서 할당*/
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearAuthor {
+  0% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+}
+
+@keyframes disappearAuthor {
+  0% {
+    opacity: 1;
+    /*quote.js 86에서 할당*/
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+}
+#quote {
+  color: var(--white);
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /*quote 줄바꿈 방지용*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#quote span:first-child {
+  font-size: 18px;
+  font-weight: 900;
+}
+#quote span:last-child {
+  color: var(--white);
+  font-size: 15px;
+  opacity: 0;
+}

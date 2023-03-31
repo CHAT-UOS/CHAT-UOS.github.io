@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>바닐라JS Challenge</title>
+    <link rel="stylesheet" href="ChallengeCSS/html-css.css" class="css" />
+    <link rel="stylesheet" href="ChallengeCSS/login.css" class="css" />
+    <link rel="stylesheet" href="ChallengeCSS/clock.css" class="css" />
+    <link rel="stylesheet" href="ChallengeCSS/quotes.css" class="css" />
+    <link rel="stylesheet" href="ChallengeCSS/background.css" class="css" />
+    <link rel="stylesheet" href="ChallengeCSS/todolist.css" class="css" />
+    <link rel="stylesheet" href="ChallengeCSS/weather.css" class="css" />
+    <link rel="stylesheet" href="ChallengeCSS/variables.css" class="css" />
+  </head>
+  <body>
+    <div id="container">
+      <form id="Login-form" class="hidden">
+        <input
+          reuired
+          maxlength="15"
+          minlength="1"
+          type="text"
+          placeholder="What is your name?"
+          name="username"
+        />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <!--Login part-->
+      <h1 id="clock">00:00:00</h1>
+      <!--Clock part-->
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+      <!--quotes part-->
+      <div id="img-container"></div>
+      <!--background image part-->
+
+      <div id="weather">
+        <div class="box-top">
+          <i></i>
+          <span class="temperature"></span>
+        </div>
+        <div class="box-bottom">
+          <span class="nation"></span>
+          <span class="city"></span>
+        </div>
+      </div>
+      <!--weather part-->
+      <div id="ToDo">
+        <div class="ToDoText"><span>ToDo</span></div>
+        <div id="newScreen" class="hidden">
+          <ul id="todo-list">
+            <span id="title-List">Todo List</span>
+          </ul>
+          <form id="todo-Form">
+            <label for="textbox"
+              ><input type="text" placeholder="New Todo"
+            /></label>
+          </form>
+        </div>
+      </div>
+      <!--to-do list part-->
+      <script src="ChallengeJS/login.js"></script>
+      <script src="ChallengeJS/clock.js"></script>
+      <script src="ChallengeJS/quotes.js"></script>
+      <script src="ChallengeJS/background.js"></script>
+      <script src="ChallengeJS/todolist.js"></script>
+      <script src="ChallengeJS/weather.js"></script>
+      <script
+        src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
