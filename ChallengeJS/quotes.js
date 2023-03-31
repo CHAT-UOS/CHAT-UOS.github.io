@@ -35,7 +35,7 @@ const quotes = [
     author: "Anonymous",
   },
   {
-    quote: "The best way to learn to code is to code",
+    quote: "The best way to learn to code is to code.",
     author: "Anonymous",
   },
   {
