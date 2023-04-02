@@ -66,7 +66,6 @@ if (saveUserName === null) {
   //1-2
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   //숨겨져 있던 form이 드러남
-  console.log(saveUserName);
   loginForm.addEventListener("submit", onLoginSubmit);
   //loginForm이 submit이라는 event가 발생하면 onLoginSubmit function호출
   loginForm.addEventListener("submit", stopEvent);

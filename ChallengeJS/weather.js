@@ -5,7 +5,7 @@ function onGeo0k(position) {
   //위치정보를 number로 변환
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}&units=metric`;
   //location, weather정보를 알려주는 url을 value로 받는 url variable생성
   fetch(url)
     //url로 정보요청
